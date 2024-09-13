@@ -1,7 +1,17 @@
 {
   "extends": "next/core-web-vitals",
   "rules": {
-    "quotes": ["error", "single"],
-    "jsx-quotes": ["error", "prefer-double"]
-  }
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "jsx-quotes": ["error", "prefer-double"],
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-img-element": "warn"
+  },
+  "overrides": [
+    {
+      "files": ["pages/_document.js", "pages/api/hello.js"],
+      "rules": {
+        "quotes": "off"
+      }
+    }
+  ]
 }

@@ -14,7 +14,7 @@ const BioSection = () => {
               Paolo Grosso is a versatile composer and musician known for his unique sound and musical signature. With a passion for creating captivating melodies and innovative harmonies, Paolo has made a name for himself in the music industry.
             </p>
             <p>
-              His compositions span various genres, from classical to contemporary, always pushing the boundaries of musical expression. Paolo's work has been featured in numerous films, television shows, and live performances around the world.
+              His compositions span various genres, from classical to contemporary, always pushing the boundaries of musical expression. Paolo&apos;s work has been featured in numerous films, television shows, and live performances around the world.
             </p>
           </div>
           <div className={styles.bioImage}>
