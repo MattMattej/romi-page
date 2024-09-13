@@ -1,0 +1,39 @@
+.bioSection {
+    background-color: var(--section-bg-1);
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .bioContent {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .bioText {
+    flex: 1;
+  }
+  
+  .bioImage {
+    flex: 1;
+  }
+  
+  .bioImage img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .bioContent {
+      flex-direction: column;
+    }
+  
+    .bioImage {
+      order: -1;
+    }
+  }

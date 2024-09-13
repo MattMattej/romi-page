@@ -1,0 +1,46 @@
+.homeSection {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/path-to-your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .homeSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .title {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .cta {
+    position: relative;
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 3rem;
+    }
+  
+    .subtitle {
+      font-size: 1.2rem;
+    }
+  }

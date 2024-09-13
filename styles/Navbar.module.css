@@ -1,0 +1,64 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+.navbar:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+
+#home {
+  margin-top: -80px; /* Debe ser el mismo valor que el padding-top del body */
+  padding-top: 80px;
+}
+.brandName {
+  font-size: 24px;
+  font-weight: 700;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  cursor: pointer;
+}
+
+.ul {
+  display: flex;
+  list-style: none;
+}
+
+.li {
+  margin: 0 15px;
+  cursor: pointer;
+  color: var(--foreground);
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.li:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  
+  .ul {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .li {
+    margin: 5px 10px;
+  }
+}
