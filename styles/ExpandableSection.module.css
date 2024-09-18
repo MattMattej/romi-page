@@ -1,0 +1,39 @@
+.expandableSection {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--secondary);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--secondary);
+  color: var(--foreground);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex-grow: 1;
+  margin: 0;
+}
+
+.title:hover {
+  background-color: var(--primary);
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.expanded {
+  transform: rotate(180deg);
+}
+
+.content {
+  padding: 1rem;
+  background-color: var(--background);
+  color: var(--foreground);
+}
