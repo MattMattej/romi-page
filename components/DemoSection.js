@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Cambia a comillas simples
 import Image from 'next/image'; // Importa el componente Image
 import styles from '../styles/DemoSection.module.css';
 
