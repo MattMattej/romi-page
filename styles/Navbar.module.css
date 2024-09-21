@@ -1,3 +1,4 @@
+/* styles/Navbar.module.css */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -17,13 +18,13 @@
 }
 
 #home {
-  margin-top: -80px;
-  padding-top: 80px;
+  margin-top: -80px; /* Evita que el contenido se superponga al navbar */
+  padding-top: 80px; /* Espacio para evitar superposición */
 }
 
 .brandName {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: bold; /* Cambiado a bold para mayor claridad */
   background: linear-gradient(to right, #a0e6ff, #d4b8ff);
   -webkit-background-clip: text;
   background-clip: text;
@@ -33,56 +34,71 @@
 
 .ul {
   display: flex;
-  list-style: none;
+  list-style-type: none; /* Asegúrate de que no haya puntos de lista */
 }
 
 .li {
   margin: 0 15px;
   cursor: pointer;
-  color: var(--foreground);
+  color: var(--foreground); /* Asegúrate de definir esta variable en tu CSS global */
   font-size: 16px;
-  transition: color 0.3s ease;
 }
 
 .li:hover {
-  color: #a0e6ff;
+  color: #a0e6ff; /* Color al pasar el mouse */
+}
+
+.languageSwitch {
+  background-color: #a0e6ff; /* Color de fondo para el botón de idioma */
+  color: black; /* Color del texto */
+  padding: 5px 10px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+.languageSwitch:hover {
+  background-color: #d4b8ff; /* Color al pasar el mouse */
 }
 
 .menuButton {
-  display: none;
-  background: none;
-  border: none;
-  color: var(--foreground);
-  font-size: 24px;
-  cursor: pointer;
+   display: none; /* Oculto por defecto en pantallas grandes */
+   background: none; 
+   border: none; 
+   color: var(--foreground); 
+   font-size:24px; 
+   cursor:pointer; 
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .menuButton {
-    display: block;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-  }
-  
-  .ul {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 20px;
-  }
-  
-  .ul.show {
-    display: flex;
-  }
-  
-  .li {
-    margin: 10px 0;
-    text-align: center;
-  }
+/* Estilos responsivos */
+@media (max-width:768px) {
+   .navbar {
+     flex-direction: column; 
+     align-items:flex-start; 
+   }
+   
+   .menuButton {
+     display:block; /* Mostrar botón en pantallas pequeñas */
+     position:absolute; 
+     right:20px; 
+     top:20px; 
+   }
+   
+   .ul {
+     display:none; 
+     flex-direction:column; 
+     width:100%; 
+     margin-top:20px; 
+   }
+   
+   .ul.show { 
+     display:flex; /* Mostrar menú cuando está abierto */ 
+   }
+   
+   .li { 
+     margin:10px0; 
+     text-align:center; 
+   }
+
+   .languageSwitch { 
+     margin-top:10px; 
+   }
 }

@@ -1,32 +1,38 @@
+// i18n.js
 const i18next = require('i18next');
 const { initReactI18next } = require('react-i18next');
 
-i18next.use(initReactI18next).init({
-  resources: {
-    en: {
-      translation: {
-        "Unique Sound and Musical Signature": "Unique Sound and Musical Signature",
-        // Añadir todas las traducciones necesarias aquí
+i18next
+  .use(initReactI18next)
+  .init({
+    resources: {
+      en: {
+        translation: {
+          bio: "Bio",
+          demos: "Demos",
+          listen: "Listen",
+          projects: "Projects",
+          news: "News",
+          contact: "Contact",
+        },
+      },
+      es: {
+        translation: {
+          bio: "Biografía",
+          demos: "Demos",
+          listen: "Escuchar",
+          projects: "Proyectos",
+          news: "Noticias",
+          contact: "Contacto",
+        },
       },
     },
-    es: {
-      translation: {
-        "Unique Sound and Musical Signature": "Firma Sonora Única y Distintiva",
-        // Añadir todas las traducciones necesarias aquí
-      },
+    lng: "en", // Idioma por defecto
+    fallbackLng: "en", // Idioma de reserva
+
+    interpolation: {
+      escapeValue: false, // React ya hace el escape
     },
-  },
-  lng: "en", // Idioma por defecto
-  fallbackLng: "en",
+  });
 
-  interpolation: {
-    escapeValue: false,
-  },
-});
-
-module.exports = {
-  i18n: {
-    locales: ['en', 'es'],
-    defaultLocale: 'en',
-  },
-};
+module.exports = i18next;

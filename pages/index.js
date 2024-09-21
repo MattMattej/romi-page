@@ -4,9 +4,9 @@ import i18n from '../i18n';
 import Navbar from '../components/Navbar';
 import HomeSection from '../components/HomeSection';
 import BioSection from '../components/BioSection';
-//import ListenSection from '../components/ListenSection';
-//import AlbumsSection from '../components/AlbumsSection';
-//import ProjectsSection from '../components/ProjectsSection';
+import DemoSection from '../components/DemoSection';
+import ListenSection from '../components/ListenSection';
+import ProjectSection from '../components/ProjectSection';
 //import NewsSection from '../components/NewsSection';
 //import ContactSection from '../components/ContactSection';
 
@@ -27,9 +27,10 @@ export default function Home() {
         <Navbar />
         <main>
           <HomeSection />
+          <DemoSection />
+          <ListenSection />
+          <ProjectSection />
           <BioSection />
-    
-        
         </main>
       </div>
     </I18nextProvider>

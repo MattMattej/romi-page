@@ -15,7 +15,7 @@ const HomeSection = () => {
           </div>
           <div className={styles.imageContent}>
             <Image
-              src="/paolo-grosso.jpg"
+              src="/paolo2.png"
               alt="Paolo Grosso"
               width={200}
               height={200}
