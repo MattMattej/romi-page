@@ -37,25 +37,24 @@ export default function Navbar() {
   };
 
   const toggleLanguage = () => {
-    i18n.changeLanguage(i18n.language === 'en' ? 'es' : 'en');
+    i18n.changeLanguage(i18n.language === 'es' ? 'en' : 'es');
   };
 
   return (
     <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ''}`}>
-      <span className={styles.brandName} onClick={() => scrollToSection('home')}>Paolo Grosso</span>
+      <span className={styles.brandName} onClick={() => scrollToSection('home')}>Ro Casciotti</span>
       <button className={styles.menuButton} onClick={toggleMenu}>
         ☰
       </button>
       <ul className={`${styles.ul} ${isMenuOpen ? styles.show : ''}`}>
        
-        <li className={styles.li} onClick={() => scrollToSection('demos')}>{t('demos')}</li>
-        <li className={styles.li} onClick={() => scrollToSection('listen')}>{t('listen')}</li>
-        <li className={styles.li} onClick={() => scrollToSection('projects')}>{t('projects')}</li>
-        <li className={styles.li} onClick={() => scrollToSection('news')}>{t('news')}</li>
+        <li className={styles.li} onClick={() => scrollToSection('planes')}>{t('planes')}</li>
+        <li className={styles.li} onClick={() => scrollToSection('clases')}>{t('clases')}</li>
+        <li className={styles.li} onClick={() => scrollToSection('desafios')}>{t('desafios')}</li>
         <li className={styles.li} onClick={() => scrollToSection('bio')}>{t('bio')}</li>
         <li className={styles.li} onClick={() => scrollToSection('contact')}>{t('contact')}</li>
         <li className={`${styles.li} ${styles.languageSwitch}`} onClick={toggleLanguage}>
-          {i18n.language === 'en' ? 'ES' : 'EN'}
+          {i18n.language === 'es' ? 'EN' : 'ES'}
         </li>
       </ul>
     </nav>

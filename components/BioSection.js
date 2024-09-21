@@ -16,44 +16,26 @@ const BioSection = () => {
         <div className={styles.bioContent}>
           <div className={styles.bioImages}>
             <Image 
-              src='/paolo1.png' 
-              alt='Paolo Grosso' 
+              src='/image3.webp' 
+              alt='Ro Casciotti' 
               width={300} 
               height={300} 
               objectFit='cover' 
               className={styles.image}
             />
             <div className={styles.socialIcons}>
-              <a href='https://www.youtube.com/user/PaoloGrosso' target='_blank' rel='noopener noreferrer'>
+              <a href='https://www.youtube.com/user/' target='_blank' rel='noopener noreferrer'>
                 <FontAwesomeIcon icon={faYoutube} className={styles.icon} />
               </a>
-              <a href='https://www.linkedin.com/in/francopaologrosso/' target='_blank' rel='noopener noreferrer'>
-                <FontAwesomeIcon icon={faLinkedin} className={styles.icon} />
-              </a>
-              <a href='https://open.spotify.com/artist/71emEmZqNA92fpj1aBzsVF' target='_blank' rel='noopener noreferrer'>
-                <FontAwesomeIcon icon={faSpotify} className={styles.icon} />
-              </a>
-              <a href='https://www.instagram.com/the_smokeymonkey/' target='_blank' rel='noopener noreferrer'>
+              <a href='https://www.instagram.com/romina.casciotti/' target='_blank' rel='noopener noreferrer'>
                 <FontAwesomeIcon icon={faInstagram} className={styles.icon} />
               </a>
             </div>
           </div>
           <div className={styles.bioText}>
             <div className={styles.bioBlock}>
-              <p><strong>Franco Paolo Grosso González</strong></p>
+              <p><strong>Romina Casciotti Delfino</strong></p>
               <p>{t('bio_text_1')}</p>
-            </div>
-            <div className={styles.bioBlock}>
-              <p>{t('bio_text_2')}</p>
-            </div>
-            <div className={styles.bioBlock}>
-              <p>{t('bio_text_3')}</p>
-            </div>
-            <div className={styles.bioBlock}>
-              <p>{t('bio_text_4')}</p>
-            </div>
-            <div className={styles.bioBlock}>
-              <p>{t('bio_text_5')}</p>
             </div>
           </div>
         </div>
