@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Image from 'next/image'; // Importa el componente Image
 import styles from '../styles/DemoSection.module.css';
 
 const DemosSection = () => {
@@ -20,7 +21,13 @@ const DemosSection = () => {
         <Carousel showThumbs={false} showStatus={false} infiniteLoop={true} className={styles.carousel}>
           {demos.map((demo) => (
             <div key={demo.id} className={styles.demoSlide}>
-              <img src={demo.image} alt={demo.title} />
+              <Image 
+                src={demo.image} 
+                alt={demo.title} 
+                width={300} // Ancho máximo
+                height={300} // Alto máximo
+                objectFit="cover" // Mantiene la proporción y recorta si es necesario
+              />
               <p className={styles.legend}>{demo.title}</p>
             </div>
           ))}
