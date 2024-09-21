@@ -8,27 +8,27 @@ i18next
     resources: {
       en: {
         translation: {
-          bio: "Bio",
-          demos: "Demos",
-          listen: "Listen",
-          projects: "Projects",
-          news: "News",
-          contact: "Contact",
+          bio: 'Bio',
+          demos: 'Demos',
+          listen: 'Listen',
+          projects: 'Projects',
+          news: 'News',
+          contact: 'Contact',
         },
       },
       es: {
         translation: {
-          bio: "Biografía",
-          demos: "Demos",
-          listen: "Escuchar",
-          projects: "Proyectos",
-          news: "Noticias",
-          contact: "Contacto",
+          bio: 'Biografía',
+          demos: 'Demos',
+          listen: 'Escuchar',
+          projects: 'Proyectos',
+          news: 'Noticias',
+          contact: 'Contacto',
         },
       },
     },
-    lng: "en", // Idioma por defecto
-    fallbackLng: "en", // Idioma de reserva
+    lng: 'en', // Idioma por defecto
+    fallbackLng: 'en', // Idioma de reserva
 
     interpolation: {
       escapeValue: false, // React ya hace el escape

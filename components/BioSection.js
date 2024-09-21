@@ -4,10 +4,10 @@ import styles from '../styles/BioSection.module.css';
 
 const BioSection = () => {
   return (
-    <section id="bio" className={`${styles.bioSection} section`}>
-      <div className="container">
+    <section id='bio' className={`${styles.bioSection} section`}>
+      <div className='container'>
         <h2 className={styles.title}>
-          <span className="gradient-text">About Paolo</span>
+          <span className='gradient-text'>About Paolo</span>
         </h2>
         <div className={styles.bioContent}>
           <div className={styles.bioText}>
@@ -31,11 +31,11 @@ Soy un compositor, músico y diseñador sonoro nacido en Montevideo, Uruguay en 
           </div>
           <div className={styles.bioImage}>
           <Image 
-              src="/paolo1.png" 
-              alt="Paolo Grosso" 
+              src='/paolo1.png' 
+              alt='Paolo Grosso' 
               width={300} // Ancho máximo
               height={300} // Alto máximo
-              objectFit="cover" // Mantiene la proporción y recorta si es necesario
+              objectFit='cover' // Mantiene la proporción y recorta si es necesario
             />
           </div>
         </div>

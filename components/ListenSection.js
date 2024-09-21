@@ -13,8 +13,8 @@ const ListenSection = () => {
   ];
 
   return (
-    <section id="listen" className={styles.listenSection}>
-      <div className="container">
+    <section id='listen' className={styles.listenSection}>
+      <div className='container'>
         <h2 className={styles.title}>{t('Listen')}</h2>
         <div className={styles.trackList}>
           {tracks.map((track) => (

@@ -1,16 +1,17 @@
 {
   "extends": "next/core-web-vitals",
   "rules": {
-    "quotes": ["error", "single", { "avoidEscape": true }],
-    "jsx-quotes": ["error", "prefer-double"],
+    "quotes": ["error", "single", { "avoidEscape": true }], // Usar comillas simples en todo
+    "jsx-quotes": ["error", "prefer-single"], // Usar comillas simples en JSX también
     "react/no-unescaped-entities": "off",
     "@next/next/no-img-element": "warn"
   },
   "overrides": [
     {
-      "files": ["pages/_document.js", "pages/api/hello.js"],
+      "files": ["*.js", "*.jsx"],  // Aplicar reglas de comillas a todos los archivos JS y JSX
       "rules": {
-        "quotes": ["error", "single", { "avoidEscape": true }]
+        "quotes": ["error", "single", { "avoidEscape": true }],
+        "jsx-quotes": ["error", "prefer-single"]
       }
     }
   ]

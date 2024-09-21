@@ -31,8 +31,8 @@ const ProjectsSection = () => {
     : projects.filter(project => project.category === activeFilter);
 
   return (
-    <section id="projects" className={styles.projectsSection}>
-      <div className="container">
+    <section id='projects' className={styles.projectsSection}>
+      <div className='container'>
         <h2 className={styles.title}>{t('Projects')}</h2>
         <div className={styles.filters}>
           {filters.map((filter) => (
@@ -53,7 +53,7 @@ const ProjectsSection = () => {
                 alt={project.title}
                 width={300}
                 height={300}
-                objectFit="cover"
+                objectFit='cover'
               />
               <h3>{project.title}</h3>
             </div>

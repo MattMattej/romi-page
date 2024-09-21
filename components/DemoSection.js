@@ -15,8 +15,8 @@ const DemosSection = () => {
   ];
 
   return (
-    <section id="demos" className={styles.demosSection}>
-      <div className="container">
+    <section id='demos' className={styles.demosSection}>
+      <div className='container'>
         <h2 className={styles.title}>{t('Demos')}</h2>
         <Carousel showThumbs={false} showStatus={false} infiniteLoop={true} className={styles.carousel}>
           {demos.map((demo) => (
@@ -26,7 +26,7 @@ const DemosSection = () => {
                 alt={demo.title} 
                 width={300} // Ancho máximo
                 height={300} // Alto máximo
-                objectFit="cover" // Mantiene la proporción y recorta si es necesario
+                objectFit='cover' // Mantiene la proporción y recorta si es necesario
               />
               <p className={styles.legend}>{demo.title}</p>
             </div>
