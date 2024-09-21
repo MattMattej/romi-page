@@ -1,10 +1,8 @@
 .expandableSection {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid var(--secondary);
-  border-radius: 5px;
+  border-bottom: 1px solid var(--secondary);
   overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .title {
@@ -12,28 +10,43 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: var(--secondary);
-  color: var(--foreground);
-  cursor: pointer;
+  background-color: var(--background);
+  color: var(--primary);
+  font-size: 1.2rem;
   transition: background-color 0.3s ease;
-  flex-grow: 1;
-  margin: 0;
 }
 
 .title:hover {
   background-color: var(--primary);
+  color: var(--background);
 }
 
 .arrow {
   transition: transform 0.3s ease;
 }
 
-.expanded {
+.expandedArrow {
   transform: rotate(180deg);
 }
 
 .content {
   padding: 1rem;
-  background-color: var(--background);
+  background-color: var(--secondary);
   color: var(--foreground);
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
+.expandableSection.expanded .content {
+  max-height: 300px; /* Ajusta según el contenido */
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.2rem;
+  }
+  .content {
+    font-size: 1rem;
+  }
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import Image from 'next/image'; // Importa el componente Image
+import Image from 'next/image';
 import styles from '../styles/ProjectSection.module.css';
 
 const ProjectsSection = () => {
@@ -45,15 +45,16 @@ const ProjectsSection = () => {
             </button>
           ))}
         </div>
+        {/* Cambié el nombre de la clase del grid */}
         <div className={styles.projectGrid}>
           {filteredProjects.map((project) => (
             <div key={project.id} className={styles.projectCard}>
               <Image 
-                src={project.image}
-                alt={project.title}
-                width={300}
-                height={300}
-                objectFit='cover'
+                src={project.image} 
+                alt={project.title} 
+                width={250} 
+                height={250} 
+                objectFit='cover' 
               />
               <h3>{project.title}</h3>
             </div>

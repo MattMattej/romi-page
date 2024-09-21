@@ -7,8 +7,8 @@ import BioSection from '../components/BioSection';
 import DemoSection from '../components/DemoSection';
 import ListenSection from '../components/ListenSection';
 import ProjectSection from '../components/ProjectSection';
+import Footer from '../components/Footer';
 //import NewsSection from '../components/NewsSection';
-//import ContactSection from '../components/ContactSection';
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -31,6 +31,7 @@ export default function Home() {
           <ListenSection />
           <ProjectSection />
           <BioSection />
+          <Footer />
         </main>
       </div>
     </I18nextProvider>

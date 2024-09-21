@@ -1,8 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Cambia a comillas simples
-import Image from 'next/image'; // Importa el componente Image
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import Image from 'next/image';
 import styles from '../styles/DemoSection.module.css';
 
 const DemosSection = () => {
@@ -24,9 +24,9 @@ const DemosSection = () => {
               <Image 
                 src={demo.image} 
                 alt={demo.title} 
-                width={300} // Ancho máximo
-                height={300} // Alto máximo
-                objectFit='cover' // Mantiene la proporción y recorta si es necesario
+                width={300} 
+                height={300} 
+                objectFit='cover'
               />
               <p className={styles.legend}>{demo.title}</p>
             </div>

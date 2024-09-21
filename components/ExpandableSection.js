@@ -1,17 +1,15 @@
 import React, { useState } from 'react';
 import styles from '../styles/ExpandableSection.module.css';
 
-const ExpandableSection = ({ title, content }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
-
+const ExpandableSection = ({ title, content, isExpanded, onToggle }) => {
   return (
-    <div className={styles.expandableSection}>
+    <div className={`${styles.expandableSection} ${isExpanded ? styles.expanded : ''}`}>
       <h3 
         className={styles.title} 
-        onClick={() => setIsExpanded(!isExpanded)}
+        onClick={onToggle}
       >
         {title}
-        <span className={`${styles.arrow} ${isExpanded ? styles.expanded : ''}`}>
+        <span className={`${styles.arrow} ${isExpanded ? styles.expandedArrow : ''}`}>
           ▼
         </span>
       </h3>

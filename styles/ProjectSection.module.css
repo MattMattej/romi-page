@@ -1,77 +1,93 @@
-/* styles/ProjectSection.module.css */
-
 .projectsSection {
-    min-height: 100vh; /* Asegura que la sección ocupe al menos toda la altura de la ventana */
-    display: flex;
-    flex-direction: column; /* Alinea los elementos verticalmente */
-    align-items: center; /* Centra horizontalmente */
-    background-color: var(--background); /* Usa el color de fondo definido en variables */
-    padding: 80px 0; /* Espaciado superior e inferior */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background);
+  padding: 80px 0;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: var(--primary);
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.filterButton {
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filterButton:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.active {
+  background-color: var(--primary);
+  color: white;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.projectCard {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.projectCard img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 2px solid var(--primary);
+}
+
+.projectCard h3 {
+  padding: 15px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .projectsSection {
+    padding: 60px 0;
   }
-  
+
   .title {
-    font-size: 3rem; /* Tamaño grande para el título */
-    margin-bottom: 40px; /* Espacio debajo del título */
-    color: var(--primary); /* Color del texto utilizando variable */
+    font-size: 2rem;
   }
-  
-  .filters {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px; /* Espacio debajo de los filtros */
-  }
-  
-  .filterButton {
-    background-color: transparent; /* Fondo transparente */
-    border: 2px solid var(--primary); /* Borde con color primario */
-    color: var(--primary); /* Color del texto utilizando variable */
-    padding: 10px 20px;
-    margin: 0 10px; /* Espaciado entre botones */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
-  }
-  
-  .filterButton:hover {
-    background-color: var(--primary); /* Color de fondo al pasar el mouse */
-    color: white; /* Cambia el color del texto al pasar el mouse */
-  }
-  
-  .active {
-    background-color: var(--primary); /* Color de fondo activo */
-    color: white; /* Color del texto activo */
-  }
-  
+
   .projectGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Cuadrícula responsiva */
-    gap: 20px; /* Espacio entre los elementos */
+    grid-template-columns: 1fr;
   }
-  
-  .projectCard {
-    background-color: var(--card-bg); /* Fondo de tarjeta usando variable para un tono gris claro */
-    border-radius: 8px; /* Bordes redondeados en las tarjetas */
-    box-shadow: rgba(0,0,0,0.1) 0px 4px 10px; /* Sombra suave para profundidad */
-    overflow: hidden; /* Evita que el contenido se desborde */
-  }
-  
+
   .projectCard img {
-    width: 100%; /* Imagen ocupa todo el ancho de la tarjeta */
-    height: auto; /* Mantiene la proporción de la imagen */
+    height: auto;
   }
-  
-  .projectCard h3 {
-    padding: 15px;
-    text-align: center;
-  }
-  
-  /* Estilos responsivos para dispositivos móviles */
-  @media (max-width:768px) {
-      .projectsSection {
-        padding: 60px 0; /* Ajusta el espaciado en pantallas pequeñas */
-      }
-  
-      .title {
-        font-size: 2.5rem; /* Reduce el tamaño del título en pantallas pequeñas */
-      }
-  }
+}
