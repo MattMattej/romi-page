@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from '../styles/BioSection.module.css';
 
 const BioSection = () => {
@@ -29,7 +30,13 @@ Soy un compositor, músico y diseñador sonoro nacido en Montevideo, Uruguay en 
           
           </div>
           <div className={styles.bioImage}>
-            <img src="/paolo1.png" alt="Paolo Grosso" />
+          <Image 
+              src="/paolo1.png" 
+              alt="Paolo Grosso" 
+              width={300} // Ancho máximo
+              height={300} // Alto máximo
+              objectFit="cover" // Mantiene la proporción y recorta si es necesario
+            />
           </div>
         </div>
       </div>

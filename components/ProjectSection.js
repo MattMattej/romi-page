@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import Image from 'next/image'; // Importa el componente Image
 import styles from '../styles/ProjectSection.module.css';
 
 const ProjectsSection = () => {
@@ -47,7 +48,13 @@ const ProjectsSection = () => {
         <div className={styles.projectGrid}>
           {filteredProjects.map((project) => (
             <div key={project.id} className={styles.projectCard}>
-              <img src={project.image} alt={project.title} />
+              <Image 
+                src={project.image}
+                alt={project.title}
+                width={300}
+                height={300}
+                objectFit="cover"
+              />
               <h3>{project.title}</h3>
             </div>
           ))}
