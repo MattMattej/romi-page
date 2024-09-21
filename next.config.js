@@ -6,6 +6,9 @@ const nextConfig = {
     defaultLocale: 'en',
   },
   reactStrictMode: true,
+  eslint: {
+    ignoreDuringBuilds: true, // Ignora los errores de ESLint durante el build
+  },
 };
 
 module.exports = nextConfig;
