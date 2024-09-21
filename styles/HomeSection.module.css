@@ -1,98 +1,72 @@
+/* styles/HomeSection.module.css */
 .homeSection {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-color: var(--background);
+  background-color: #f4f8f2; /* Fondo verde muy sutil */
   padding: 2rem 0;
 }
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 500px;
   margin: 0 auto;
-  padding: 0 1rem;
-}
-
-.content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.5rem;
-}
-
-.textContent {
-  flex: 1;
-  padding-right: 2rem;
-}
-
-.imageContent {
-  flex: 1;
+  text-align: center;
 }
 
 .title {
   font-size: 3rem;
   margin-bottom: 0.5rem;
-  color: var(--primary);
+  color: #4a5b4c; /* Verde oscuro */
 }
 
 .subtitle {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: var(--secondary);
+  color: #6a7b6d; /* Verde medio para contraste */
 }
 
-.description {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
+.buttons {
+  margin-top: 20px;
 }
 
-
-.expandableSections {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.expandableSections > div {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.expandableSections button {
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 1rem;
-  background-color: var(--primary);
-  color: white;
-  border: none;
+.button {
+  background-color: #a0e6ff;
+  color: black;
+  padding: 10px 20px;
+  margin: 0 10px;
   border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s;
+  text-decoration: none;
 }
 
-.expandableSections button:hover {
-  background-color: var(--primary-dark);
+.button:hover {
+  background-color: #d4b8ff;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.image {
+  max-height: 200px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 768px) {
-  .content {
-    flex-direction: column;
+  .title {
+    font-size: 2.5rem;
   }
 
-  .textContent, .imageContent {
-    width: 100%;
-    padding-right: 0;
-  
-    margin-bottom: 1rem;
+  .subtitle {
+    font-size: 1.2rem;
   }
 
-  .expandableSections {
-    grid-template-columns: 1fr;
+  .image {
+    max-width: 100%;
   }
 }

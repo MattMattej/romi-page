@@ -11,7 +11,7 @@ const BioSection = () => {
     <section id='bio' className={`${styles.bioSection} section`}>
       <div className='container'>
         <h2 className={styles.title}>
-          <span>{t('About Paolo')}</span>
+          <span>{t('Sobre Romi')}</span>
         </h2>
         <div className={styles.bioContent}>
           <div className={styles.bioImages}>

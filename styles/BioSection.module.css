@@ -1,13 +1,14 @@
+/* styles/BioSection.module.css */
 .bioSection {
-  background-color: var(--section-bg-1);
+  background-color: #eef2ea; /* Fondo verde claro y sutil */
   padding: 40px 0;
 }
 
 .title {
-  text-align: center; /* Alineación centrada */
-  font-size: 2.5rem; /* Ajuste al mismo tamaño que DemoSection */
-  margin-bottom: 40px; /* Mismo margen que DemoSection */
-  color: var(--primary)!important; /* Color consistente */ 
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #4a5b4c; /* Texto en verde oscuro */
 }
 
 .bioContent {

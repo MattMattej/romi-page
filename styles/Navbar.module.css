@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #7d8c79; /* Color especificado para el navbar */
   position: fixed;
   top: 0;
   left: 0;
@@ -14,7 +14,7 @@
 }
 
 .navbar:hover {
-  background-color: rgba(0, 0, 0, 1);
+  background-color: #6d7c69; /* Fondo más oscuro al hacer hover */
 }
 
 #home {
@@ -24,8 +24,8 @@
 
 .brandName {
   font-size: 24px;
-  font-weight: bold; /* Cambiado a bold para mayor claridad */
-  background: linear-gradient(to right, #a0e6ff, #d4b8ff);
+  font-weight: bold; 
+  background: white;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -34,71 +34,70 @@
 
 .ul {
   display: flex;
-  list-style-type: none; /* Asegúrate de que no haya puntos de lista */
+  list-style-type: none;
 }
 
 .li {
   margin: 0 15px;
   cursor: pointer;
-  color: var(--foreground); /* Asegúrate de definir esta variable en tu CSS global */
+  color: var(--foreground);
   font-size: 16px;
 }
 
 .li:hover {
-  color: #a0e6ff; /* Color al pasar el mouse */
+  color: #a0e6ff;
 }
 
 .languageSwitch {
-  background-color: #a0e6ff; /* Color de fondo para el botón de idioma */
-  color: black; /* Color del texto */
-  padding: 5px 10px; /* Espaciado interno */
-  border-radius: 5px; /* Bordes redondeados */
+  background-color: #a0e6ff;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 .languageSwitch:hover {
-  background-color: #d4b8ff; /* Color al pasar el mouse */
+  background-color: #d4b8ff;
 }
 
 .menuButton {
-   display: none; /* Oculto por defecto en pantallas grandes */
-   background: none; 
-   border: none; 
-   color: var(--foreground); 
-   font-size:24px; 
-   cursor:pointer; 
+  display: none;
+  background: none;
+  border: none;
+  color: var(--foreground);
+  font-size: 24px;
+  cursor: pointer;
 }
 
-/* Estilos responsivos */
-@media (max-width:768px) {
-   .navbar {
-     flex-direction: column; 
-     align-items:flex-start; 
-   }
-   
-   .menuButton {
-     display:block; /* Mostrar botón en pantallas pequeñas */
-     position:absolute; 
-     right:20px; 
-     top:20px; 
-   }
-   
-   .ul {
-     display:none; 
-     flex-direction:column; 
-     width:100%; 
-     margin-top:20px; 
-   }
-   
-   .ul.show { 
-     display:flex; /* Mostrar menú cuando está abierto */ 
-   }
-   
-   .li { 
-     margin:10px0; 
-     text-align:center; 
-   }
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-   .languageSwitch { 
-     margin-top:10px; 
-   }
+  .menuButton {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .ul.show {
+    display: flex;
+  }
+
+  .li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .languageSwitch {
+    margin-top: 10px;
+  }
 }

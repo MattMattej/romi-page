@@ -48,11 +48,10 @@ export default function Navbar() {
       </button>
       <ul className={`${styles.ul} ${isMenuOpen ? styles.show : ''}`}>
        
-        <li className={styles.li} onClick={() => scrollToSection('planes')}>{t('planes')}</li>
-        <li className={styles.li} onClick={() => scrollToSection('clases')}>{t('clases')}</li>
-        <li className={styles.li} onClick={() => scrollToSection('desafios')}>{t('desafios')}</li>
+        <li className={styles.li} onClick={() => scrollToSection('demos')}>{t('planes')}</li>
+        <li className={styles.li} onClick={() => scrollToSection('projects')}>{t('desafios')}</li>
         <li className={styles.li} onClick={() => scrollToSection('bio')}>{t('bio')}</li>
-        <li className={styles.li} onClick={() => scrollToSection('contact')}>{t('contact')}</li>
+        <li className={styles.li} onClick={() => scrollToSection('contact')}>{t('Contact')}</li>
         <li className={`${styles.li} ${styles.languageSwitch}`} onClick={toggleLanguage}>
           {i18n.language === 'es' ? 'EN' : 'ES'}
         </li>

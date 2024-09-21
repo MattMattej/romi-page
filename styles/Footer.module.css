@@ -1,58 +1,58 @@
+/* styles/Footer.module.css */
 .footer {
-    background-color: var(--section-bg-2);
-    padding: 40px 0;
-    text-align: center;
-    color: var(--primary);
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .contactInfo {
-    margin-bottom: 20px;
-  }
-  
-  .title {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: var(--primary);
-  }
-  
+  background-color: #eef2ea; /* Fondo verde claro */
+  padding: 40px 0;
+  text-align: center;
+  color: #4a5b4c; /* Texto en verde oscuro */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactInfo {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #4a5b4c;
+}
+
 .p {
-    margin: 5px 0;
-    font-size: 1rem;
-    color: white;
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #4a5b4c;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 20px;
+}
+
+.socialIcons a {
+  color: #4a5b4c;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.socialIcons a:hover {
+  color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 0;
   }
-  
-  .socialIcons {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .socialIcons a {
-    color: white;
+
+  .title {
     font-size: 1.5rem;
-    transition: color 0.3s ease;
   }
-  
-  .socialIcons a:hover {
-    color: var(--primary);
+
+  .socialIcons a {
+    font-size: 1.2rem;
   }
-  
-  @media (max-width: 768px) {
-    .footer {
-      padding: 30px 0;
-    }
-  
-    .title {
-      font-size: 1.5rem;
-    }
-  
-    .socialIcons a {
-      font-size: 1.2rem;
-    }
-  }
-  
+}

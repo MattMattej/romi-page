@@ -9,9 +9,10 @@ i18next
         translation: {
           // Navbar
           bio: 'Bio',
-          planes: 'Plans',
-          challenges: 'Challenges',
-          contact: 'Contact',
+          planes: 'Planes',
+          clases: 'Clases',
+          desafios: 'Desafios',
+          contacto: 'Contacto',
           'All': 'All',
           'Film': 'Film',
           'Videogame': 'Videogame',
@@ -23,10 +24,10 @@ i18next
           'EN': 'EN',
 
            // HomeSection
-           'home_description': 'Original music soundtracks that transcend boundaries, reaching global audiences and elevating the art of visual storytelling to its fullest potential.',
+           'home_description': 'Te invito a desafiar tu potencial.',
            
           // PlanesSection
-          'Plans': 'Plans',
+          'planes': 'Planes',
           'Demo Teatro': 'Theater Demo',
           'Demo Audiovisual': 'Audiovisual Demo',
 
@@ -38,8 +39,8 @@ i18next
           'Rutina Gluteos': 'Rutina Gluteos',
 
           // BioSection
-          'About Paolo': 'About Paolo',
-          'bio_text_1': 'I am a composer, musician, and sound designer born in Montevideo, Uruguay in 1989. I hold a Bachelors degree from the Universidad de la República (UDELAR) in Music, profile: Composition, where I studied with professors Osvaldo Budón, Leonardo Secco, and Luis Jure. Additionally, I studied composition with Coriún Aharonián and explored various musical genres such as Jazz, Swing, Classical, Indian Music, Candombe, Jazz Manouche, and Folk with teachers like Ariel Ameijenda, Ángel Varela, Ludmila Cavallaro, Fabián Almada, and Mario Piro, among others.',
+          'About Romi': 'About Romi',
+          'bio_text_1': 'Gravida platea nullam Ipsum, laoreet praesent aenean. Hymenaeos Ornare orci ad placerat dignissim diam tempus curae; scelerisque rhoncus fringilla hendrerit id. Ipsum suspendisse molestie, vel dis purus nisl nisl dui hendrerit vestibulum non natoque. Sodales rutrum nulla sed.Phasellus dapibus montes Primis vel iaculis Consequat risus torquent parturient nullam netus, ac lorem. Sollicitudin nostra metus inceptos diam senectus eleifend aliquam adipiscing turpis quisque amet justo a. Pretium.Torquent dis. Semper, odio iaculis sagittis faucibus dapibus senectus cubilia morbi tellus sed dui, fusce elementum Imperdiet pede facilisi mus nec mattis praesent tincidunt eget non lorem faucibus. Adipiscing fusce, in eleifend parturient.',
 
             // Footer
         'contact_title': 'Contact',

@@ -16,7 +16,7 @@ const PlanesSection = () => {
   return (
     <section id='demos' className={styles.demosSection}>
       <div className='container'>
-        <h2 className={styles.title}>{t('Demos')}</h2>
+        <h2 className={styles.title}>{t('Planes')}</h2>
         <Carousel showThumbs={false} showStatus={false} infiniteLoop={true} className={styles.carousel}>
           {demos.map((demo) => (
             <div key={demo.id} className={styles.demoSlide}>

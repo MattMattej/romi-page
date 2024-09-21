@@ -8,7 +8,7 @@ const DesafiosSection = () => {
   const [activeFilter, setActiveFilter] = useState('ALL');
 
   const filters = [
-    { id: 'ALL', label: t('All') },
+    { id: 'ALL', label: t('Todos') },
     { id: 'ABDOMINALES', label: t('Abdominales') },
     { id: 'GLUTEOS', label: t('Gluteos') },
     { id: 'PECHO', label: t('Pecho') },
@@ -27,7 +27,7 @@ const DesafiosSection = () => {
   return (
     <section id='projects' className={styles.projectsSection}>
       <div className='container'>
-        <h2 className={styles.title}>{t('Projects')}</h2>
+        <h2 className={styles.title}>{t('Desafios')}</h2>
         <div className={styles.filters}>
           {filters.map((filter) => (
             <button
