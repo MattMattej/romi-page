@@ -24,7 +24,7 @@ Soy un compositor, músico y diseñador sonoro nacido en Montevideo, Uruguay en 
  Durante años, estudié y trabajé en sonido para medios audiovisuales, generando una gran experiencia como diseñador sonoro, mezclador y postproductor de audio. 
  Como intérprete he colaborado en álbumes de varios artistas y me he presentado en incontables conciertos formando parte de conjuntos como “La Manush” y el “Ensamble de Jazz Gitano” o como músico invitado tocando sitar acompañando tanto a solistas como bandas.
 
- He obtenido premios, nominaciones, menciones y apoyos por mi trabajo como compositor y diseño sonoro en los Premios Florencio, Movida Joven, FONAM, SUDEI y en varios Festivales de cine.
+ H obtenido premios, nominaciones, menciones y apoyos por mi trabajo como compositor y diseño sonoro en los Premios Florencio, Movida Joven, FONAM, SUDEI y en varios Festivales de cine.
 
             </p>
           
