@@ -10,7 +10,7 @@
     {
       "files": ["pages/_document.js", "pages/api/hello.js"],
       "rules": {
-        "quotes": "off"
+        "quotes": ["error", "single", { "avoidEscape": true }]
       }
     }
   ]
