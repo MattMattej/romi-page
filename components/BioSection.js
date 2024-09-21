@@ -33,7 +33,7 @@ Soy un compositor, músico y diseñador sonoro nacido en Montevideo, Uruguay en 
           <Image 
               src='/paolo1.png' 
               alt='Paolo Grosso' 
-              width={300} // Ancho máximo
+              width={700} // Ancho máximo
               height={500} // Alto máximo
               objectFit='cover' // Mantiene la proporción y recorta si es necesario
             />
